@@ -1,12 +1,13 @@
-﻿double Peso, Altura, imc;
+﻿double altura, peso , imc;
 
-Console.WriteLine("Digite seu Peso(KG)");
-Peso = Convert.ToDouble(Console.ReadLine());
+Console.Write("Digite sua Altura: Altura (m)..: ");
 
-Console.WriteLine("Agora sua Altura(m)");
-Altura = Convert.ToDouble(Console.ReadLine());
+altura = Convert.ToDouble(Console.ReadLine());
 
-imc= Peso/Math.Pow ("Altura, 2");
+Console.Write("Digite seu Peso: Peso (kg)...: ");
 
+peso = Convert.ToDouble(Console.ReadLine());
+
+imc = peso / Math.Pow(altura, 2);
 
 Console.WriteLine($"\nIMC: {imc:N1} kg/m²");
